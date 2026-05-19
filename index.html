@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>GitExplorer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+<div class="container">
+    <h1>GitExplorer</h1>
+    <div class="search-box">
+        <input type="text" id="search" placeholder="Buscar repositorio...">
+        <select id="language">
+            <option value="">Lenguaje</option>
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+        </select>
+
+        <input type="number" id="stars" placeholder="Estrellas mínimas">
+
+        <button onclick="buscar()">Buscar</button>
+    </div>
+
+    <div class="loader" id="loader">Buscando...</div>
+    <div class="error" id="error"></div>
+
+    <div class="results" id="results"></div>
+</div>
+</body>
+</html>
